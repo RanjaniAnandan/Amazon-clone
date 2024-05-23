@@ -11,8 +11,6 @@ import { auth } from './firebase';
 function App() {
   const [{ user }, dispatch] = useStateValue();
 
-  // useEffect >>>>>>> POWERFUL
-  //Piece of code which runs based on a given condition
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -64,22 +62,6 @@ function App() {
     </Router>
     </div>
   );
-}
-
-{
-  /* We NEED React-Router */
-}
-
-{
-  /* localhost.com/ */
-}
-
-{
-  /* localhost.com/checkout */
-}
-
-{
-  /* localhost.com/login */ 
 }
 
 export default App;
